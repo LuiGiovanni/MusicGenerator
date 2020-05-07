@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=4
+#SBATCH --time=24:00:00
+#SBATCH --job-name=tensor_test
+#SBATCH --partition=ibtesla
+#SBATCH --gres=gpu:1
+
+export CUDA_CACHE_PATH=/scratch/$USER/$SLURM_JOBID
+
+eval "$(conda shell.bash hook)"
+conda activate composerenv
+export HDF5_USE_FILE_LOCKING='FALSE'
+python lstm.py
