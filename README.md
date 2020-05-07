@@ -62,7 +62,7 @@ Aqui tuve algunos problemas con las primeras dos corridas porque fue cuando esta
 
 <center>
 <audio controls="controls">
-<source type="audio/mid" src="/ChronoTrigger1.mid" />&lt;/source&gt;
+<source type="audio/mp3" src="/src/ChronoTrigger1.mp3" />&lt;/source&gt;
 <p>Your browser does not support the audio element.</p>
 </audio>
 </center>
