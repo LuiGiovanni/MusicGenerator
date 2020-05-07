@@ -11,6 +11,8 @@ Una red neuronal recurrente es una red que tiene memoria interna. Gracias a esta
 
 Los humanos no comienzan a pensar desde cero cada segundo. A medida que lees este blog, comprendes cada palabra en base a tu conocimiento de las palabras previas. No tiras todo y comienzas a pensar desde cero de nuevo. Tus pensamientos tienen persistencia.
 
-![Image](https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png)
+<p align="center">
+  <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png">
+</p>
 
 Algo curioso de estas redes neuronales es que el concepto no es nuevo. Desde 1980 parecen existir pero hasta hace pocos años se ha tenido el suficiente poder de computo para hacerlas andar y que den resultados.
