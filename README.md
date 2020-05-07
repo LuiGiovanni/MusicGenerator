@@ -76,7 +76,7 @@ Chrono Trigger con 250 epoch
 <audio controls="">
 <source src="assets/ChronoTrigger3.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
-</audio>
+</audio><br>
 
 ### Mario Bros
 <div style="text-align: justify">
@@ -99,7 +99,7 @@ Mario Bros 3 con 250 epoch
 <audio controls="">
 <source src="assets/MarioBros3.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
-</audio>
+</audio><br>
 
 ### Legend of Zelda: Ocarina of Time
 <div style="text-align: justify">
@@ -122,7 +122,7 @@ The Legend of Zelda con 250 epoch
 <audio controls="">
 <source src="assets/Ocarina3.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
-</audio>
+</audio><br>
 
 ### Combinacion de toda la musica
 <div style="text-align: justify">
@@ -130,3 +130,7 @@ No sabia que esperar de estos resultados, pensaba que no quedarian tan bien las 
 </div><br>
 
 ## Agradecimientos
+- A Sigurður Skúli por su <a href="https://towardsdatascience.com/how-to-generate-music-using-a-lstm-neural-network-in-keras-68786834d4c5">blog</a> sobre generacion de musica con LSTM
+- A Christopher Olah por su <a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/">post</a> sobre redes recurrentes y LSTM me ayudo a entender bastante
+- A el maestro Julio Waissman por sus clases sobre redes neuronales y apoyo con dudas
+- A la maestra Sonia Sosa por su apoyo en como obtener la informacion y manejar mi metodo de trabajo
