@@ -45,3 +45,18 @@ El modelo de la red es muy similar al modelo original, los únicos cambios que h
 <p align="center">
   <img src="https://i.gyazo.com/8559083d1ead5a2499f8341bf6b63c76.png">
 </p>
+
+<div style="text-align: justify">
+Además en cuanto al entrenamiento, intente un cambio con el numero batches pero con 32 me causaba resultados que no me gustaron asi que regrese a 64 y el número de epochs a 250.<br> Aparte del cambio al modelo, no hice muchos cambios que valgan la pena mencionar solamente cosas que ayudaron al entrenamiento
+</div>
+
+## Resultados
+<div style="text-align: justify">
+En mis primeras corridas solamente utilizaba musica de cada juego por separado, para ver que resultados me daban y al final utilize toda la musica que obtuve en una sola corrida para ver los resultados
+</div>
+
+#Chrono Trigger
+<div style="text-align: justify">
+Aqui tuve algunos problemas con las primeras dos corridas porque fue cuando estaba experimentando con el tamaño del batch en el ultimo resultado volvi a batch de 64 y siento que los resultados fueron mejores si han jugado Chrono Trigger podran ver las similitudes con las piezas originales
+</div>
+
