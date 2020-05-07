@@ -34,5 +34,14 @@ Lo que hace el proyecto es leer la música en formato MIDI usando music21 para e
 
 ## Musica Utilizada
 <div style="text-align: justify">
-El proyecto original utiliza música de Final Fantasy para entrenar su red. No he tendio la oportunidad de jugar muchos juegos de Final Fantasy solamente jugue el tercero. Asi que decidi utilizar musica de Final Fantasy 3, Chrono Trigger, Mario bros 3, The Legend of Zelda: Ocarina of Time. La musica fue hallada en una pagina llamada <a href="https://www.vgmusic.com/">VGMusic</a> la cual contiene una variedad de musica de videojuegos en formato midi y tiene su propia seccion de midis que solo utilizan el piano lo cual fue muy util. Lamentablemente al buscar musica de Star Wars en formato midi no halle nada que fuera solamente el piano lo que hacia un poco mas dificil la idea de utilizarlo como datos de entrenamiento
+El proyecto original utiliza música de Final Fantasy para entrenar su red. No he tendio la oportunidad de jugar muchos juegos de Final Fantasy solamente jugue el tercero. Asi que decidi utilizar musica de Final Fantasy 3, Chrono Trigger, Mario bros 3 y The Legend of Zelda: Ocarina of Time. La musica fue hallada en una pagina llamada <a href="https://www.vgmusic.com/">VGMusic</a> la cual contiene una variedad de musica de videojuegos en formato midi y tiene su propia seccion de midis que solo utilizan el piano lo cual fue muy util. Lamentablemente al buscar musica de Star Wars en formato midi no halle nada que fuera solamente el piano lo que hacia un poco mas dificil la idea de utilizarlo como datos de entrenamiento.
 </div>
+
+## El Modelo
+<div style="text-align: justify">
+El modelo de la red es muy similar al modelo original, los únicos cambios que hice fue aumentar el número de neuronas de las capas de LSTM y aumentar el dropout entre las capas
+</div>
+
+<p align="center">
+  <img src="https://i.gyazo.com/8559083d1ead5a2499f8341bf6b63c76.png">
+</p>
