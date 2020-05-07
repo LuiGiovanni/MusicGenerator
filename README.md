@@ -31,3 +31,8 @@ Las redes LSTM son una variante de red neuronal recurrente. Estas redes surgiero
 <div style="text-align: justify">
 Lo que hace el proyecto es leer la música en formato MIDI usando music21 para extraer las notas de lo archivos MIDI con los que se quiere aprender para generar música similar.<br><br> Music21 es una coleccion de herramientas para ayudar a estudiantes y otros hallar respuestas de musica mas facilmente, cosas como "Me pregunto cuantas veces Bach hace eso" o "Desearia conocer cual banda fue la primera en usar ese progeso de acordes" o si quieres crear un programa el cual automaticamente escriba mas musica como es en mi caso.
 </div>
+
+## Musica Utilizada
+<div style="text-align: justify">
+El proyecto original utiliza música de Final Fantasy para entrenar su red. No he tendio la oportunidad de jugar muchos juegos de Final Fantasy solamente jugue el tercero. Asi que decidi utilizar musica de Final Fantasy 3, Chrono Trigger, Mario bros 3, The Legend of Zelda: Ocarina of Time. La musica fue hallada en una pagina llamada <a href="https://www.vgmusic.com/">VGMusic</a> la cual contiene una variedad de musica de videojuegos en formato midi y tiene su propia seccion de midis que solo utilizan el piano lo cual fue muy util. Lamentablemente al buscar musica de Star Wars en formato midi no halle nada que fuera solamente el piano lo que hacia un poco mas dificil la idea de utilizarlo como datos de entrenamiento
+</div>
