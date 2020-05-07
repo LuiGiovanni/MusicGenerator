@@ -63,6 +63,16 @@ Aqui tuve algunos problemas con las primeras dos corridas porque fue cuando esta
 <audio controls="">
 <source src="assets/ChronoTrigger1.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
+</audio><br>
+
+<audio controls="">
+<source src="assets/ChronoTrigger2.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio><br>
+
+<audio controls="">
+<source src="assets/ChronoTrigger3.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
 </audio>
 
 
