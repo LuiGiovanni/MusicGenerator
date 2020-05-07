@@ -126,8 +126,13 @@ Your browser does not support the audio element.
 
 ### Combinacion de toda la musica
 <div style="text-align: justify">
-No sabia que esperar de estos resultados, pensaba que no quedarian tan bien las canciones y que quiza haria una cancion bastante mala 
+No sabia que esperar de estos resultados, pensaba que no quedarian tan bien las canciones y que quiza haria una cancion bastante mala lo dejo a criterio de todos como quedo, tuvo una perdida de 0.8 en el epoch 250
 </div><br>
+
+<audio controls="">
+<source src="assets/Combine.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio><br>
 
 ## Agradecimientos
 - A Sigurður Skúli por su <a href="https://towardsdatascience.com/how-to-generate-music-using-a-lstm-neural-network-in-keras-68786834d4c5">blog</a> sobre generacion de musica con LSTM
