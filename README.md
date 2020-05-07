@@ -24,5 +24,5 @@ Las redes LSTM son una variante de red neuronal recurrente. Estas redes surgiero
 </div>
 
 <p align="center">
-  <img src="https://elgibborsms.com/blog/wp-content/uploads/2017/12/introduction-to-long-short-term-memory.png">
+  <img src="https://i.pinimg.com/originals/27/95/bc/2795bc16b012322f7767cd4d940ba2e3.png">
 </p>
