@@ -60,5 +60,6 @@ En mis primeras corridas solamente utilizaba musica de cada juego por separado, 
 Aqui tuve algunos problemas con las primeras dos corridas porque fue cuando estaba experimentando con el tamaño del batch en el ultimo resultado volvi a batch de 64 y siento que los resultados fueron mejores si han jugado Chrono Trigger podran ver las similitudes con las piezas originales, aqui la menor perdida fue de 0.027 con el epoch 243
 </div>
 
+![Hal 9000: I'm Sorry Dave](hal9000.mp3)
 ![ChronoTrigger1](/assets/ChronoTrigger1.mp3)
 
