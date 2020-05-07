@@ -60,9 +60,7 @@ En mis primeras corridas solamente utilizaba musica de cada juego por separado, 
 Aqui tuve algunos problemas con las primeras dos corridas porque fue cuando estaba experimentando con el tamaño del batch en el ultimo resultado volvi a batch de 64 y siento que los resultados fueron mejores si han jugado Chrono Trigger podran ver las similitudes con las piezas originales, aqui la menor perdida fue de 0.027 con el epoch 243
 </div>
 
-<audio alt=""><source src="/assets/ChronoTrigger1.mp3">Your browser does not support the audio tag.</audio>
 <audio controls="">
-<source src="assets/ChronoTrigger1.ogg" type="audio/ogg">
 <source src="assets/ChronoTrigger1.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
