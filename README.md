@@ -1,6 +1,16 @@
-<div style="text-align: justify">
-La transferencia de estilo es la técnica de recomponer imágenes al estilo de otras imágenes. Estos se crearon en su mayoría utilizando el código de <a href="https://github.com/jcjohnson/neural-style">Justin Johnson</a> basado en el documento de <a href="https://arxiv.org/abs/1508.06576">Gatys, Ecker y Bethge</a> que demuestra un método para rediseñar imágenes utilizando redes neuronales convolucionales.
-</div>
-<div align='center'>
-<img src = 'https://raw.githubusercontent.com/jjups96/fast-style-transfer/master/examples/thumbs/johnson.png' width="600" height="400">
-</div>
+# Generando Musica con LSTM
+
+## Una breve descripcion 
+Buscando proyectos sobre aplicaciones de redes neuronales recurrentes, los principales temas que me llamaban la atencion eran sobre generación de música. Decidí centrarme en la generación de música y buscar proyectos relacionados a esto. En mi busqueda me encontré con esta entrada de blog en la que genera música de piano usando una red neuronal LSTM con Keras y entrenada con música de final fantasy, aunque estaba mas interesado en musica de Star Wars era un buen inicio.
+
+Ahora, una intruducción hyper superficial sobre lo que son las redes neuronales recurrentes y LSTMs:
+
+## Redes Neuronales Recurrentes
+
+Una red neuronal recurrente es una red que tiene memoria interna. Gracias a esta memoria les es posible ser más precisa en predicciones sobre que es lo siguiente que debería suceder. Ya que estas redes pueden entender contexto de la información, son el tipo de red ideal cuando se está tratando con datos secuenciales: lenguaje hablado y escrito, música, películas, el clima, etc., lo cual tiene sentido cuando piensas que por ejemplo cuando hablas lo siguiente que vas a decir depende de el flujo de la conversación hasta el momento, o que el clima de mañana depende en parte del clima de hoy.
+
+Los humanos no comienzan a pensar desde cero cada segundo. A medida que lees este blog, comprendes cada palabra en base a tu conocimiento de las palabras previas. No tiras todo y comienzas a pensar desde cero de nuevo. Tus pensamientos tienen persistencia.
+
+![Image](https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png)
+
+Algo curioso de estas redes neuronales es que el concepto no es nuevo. Desde 1980 parecen existir pero hasta hace pocos años se ha tenido el suficiente poder de computo para hacerlas andar y que den resultados.
