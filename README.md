@@ -7,7 +7,7 @@ Buscando proyectos sobre aplicaciones de redes neuronales recurrentes, los princ
 
 ## Redes Neuronales Recurrentes
 <div style="text-align: justify"> 
-Una red neuronal recurrente es una red que tiene memoria interna. Gracias a esta memoria les es posible ser más precisa en predicciones sobre que es lo siguiente que debería suceder. Ya que estas redes pueden entender contexto de la información, son el tipo de red ideal cuando se está tratando con datos secuenciales: lenguaje hablado y escrito, música, películas, el clima, etc., lo cual tiene sentido cuando piensas que por ejemplo cuando hablas lo siguiente que vas a decir depende de el flujo de la conversación hasta el momento, o que el clima de mañana depende en parte del clima de hoy.<br> Los humanos no comienzan a pensar desde cero cada segundo. A medida que lees este blog, comprendes cada palabra en base a tu conocimiento de las palabras previas. No tiras todo y comienzas a pensar desde cero de nuevo. Tus pensamientos tienen persistencia.
+Una red neuronal recurrente es una red que tiene memoria interna. Gracias a esta memoria les es posible ser más precisa en predicciones sobre que es lo siguiente que debería suceder. Ya que estas redes pueden entender contexto de la información, son el tipo de red ideal cuando se está tratando con datos secuenciales: lenguaje hablado y escrito, música, películas, el clima, etc., lo cual tiene sentido cuando piensas que por ejemplo cuando hablas lo siguiente que vas a decir depende de el flujo de la conversación hasta el momento, o que el clima de mañana depende en parte del clima de hoy.<br><br> Los humanos no comienzan a pensar desde cero cada segundo. A medida que lees este blog, comprendes cada palabra en base a tu conocimiento de las palabras previas. No tiras todo y comienzas a pensar desde cero de nuevo. Tus pensamientos tienen persistencia.
 </div>
 
 <p align="center">
@@ -20,9 +20,14 @@ Algo curioso de estas redes neuronales es que el concepto no es nuevo. Desde 198
 
 ## LSTM (Long Short Term Memory)
 <div style="text-align: justify">
-Las redes LSTM son una variante de red neuronal recurrente. Estas redes surgieron principalmente para solventar un problema de dependencia de las redes recurrentes. Cuando el contexto necesario para predecir es de relativamente corto plazo, las redes recurrentes no tienen problemas, pero cuando se necesita de información que se remonte a entradas mucho más anteriores, se les dificulta predecir correctamente. No es que sea imposible, es técnicamente cierto que bajo ciertos pesos es posible que la red no tenga problemas de ese tipo, pero en la práctica esto no sucede. Aquí es donde entran las redes LSTM a salvar el día ya que fueron diseñadas para combatir justo ese problema.<br> Así como las redes recurrentes, las redes LSTM no son especialmenten nuevas. Existen desde más o menos 1990 pero han tenido que esperar hasta el poder de computo actual para poder mostrar buenos resultados.
+Las redes LSTM son una variante de red neuronal recurrente. Estas redes surgieron principalmente para solventar un problema de dependencia de las redes recurrentes. Cuando el contexto necesario para predecir es de relativamente corto plazo, las redes recurrentes no tienen problemas, pero cuando se necesita de información que se remonte a entradas mucho más anteriores, se les dificulta predecir correctamente. No es que sea imposible, es técnicamente cierto que bajo ciertos pesos es posible que la red no tenga problemas de ese tipo, pero en la práctica esto no sucede. Aquí es donde entran las redes LSTM a salvar el día ya que fueron diseñadas para combatir justo ese problema.<br><br> Así como las redes recurrentes, las redes LSTM no son especialmenten nuevas. Existen desde más o menos 1990 pero han tenido que esperar hasta el poder de computo actual para poder mostrar buenos resultados.
 </div>
 
 <p align="center">
   <img src="https://i.pinimg.com/originals/27/95/bc/2795bc16b012322f7767cd4d940ba2e3.png">
 </p>
+
+## Music21
+<div style="text-align: justify">
+Lo que hace el proyecto es leer la música en formato MIDI usando music21 para extraer las notas de lo archivos MIDI con los que se quiere aprender para generar música similar.<br><br> Music21 es una coleccion de herramientas para ayudar a estudiantes y otros hallar respuestas de musica mas facilmente, cosas como "Me pregunto cuantas veces Bach hace eso" o "Desearia conocer cual banda fue la primera en usar ese progeso de acordes" o si quieres crear un programa el cual automaticamente escriba mas musica como es en mi caso.
+</div>
