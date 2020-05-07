@@ -78,4 +78,55 @@ Chrono Trigger con 250 epoch
 Your browser does not support the audio element.
 </audio>
 
+### Mario Bros
+<div style="text-align: justify">
+Los resultados fueron mejor de lo que esperaba que serian al iniciar esta parte del entrenamiento mi cancion favorita de las que genero fue la segunda a los que han jugado este juego veran muchas partes similares a las originales, aqui la menor perdida fue de 0.024 con el epoch 248
+</div><br>
 
+Mario Bros 3 con 100 epoch
+<audio controls="">
+<source src="assets/MarioBros1.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio><br>
+
+Mario Bros 3 con 150 epoch
+<audio controls="">
+<source src="assets/MarioBros2.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio><br>
+
+Mario Bros 3 con 250 epoch
+<audio controls="">
+<source src="assets/MarioBros3.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+### Legend of Zelda: Ocarina of Time
+<div style="text-align: justify">
+En este punto esperaba mucho ya que la musica de este juego es muy buena en mi opinion y no me defraudo el programa las musica quedo bien y en particular la segunda es muy similar a una cancion del juego, aqui la menor perdida fue de 0.029 con el epoch 248
+</div><br>
+
+The Legend of Zelda con 100 epoch
+<audio controls="">
+<source src="assets/Ocarina1.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio><br>
+
+The Legend of Zelda con 150 epoch
+<audio controls="">
+<source src="assets/Ocarina2.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio><br>
+
+The Legend of Zelda con 250 epoch
+<audio controls="">
+<source src="assets/Ocarina3.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+### Combinacion de toda la musica
+<div style="text-align: justify">
+No sabia que esperar de estos resultados, pensaba que no quedarian tan bien las canciones y que quiza haria una cancion bastante mala 
+</div><br>
+
+## Agradecimientos
