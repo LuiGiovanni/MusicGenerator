@@ -61,4 +61,10 @@ Aqui tuve algunos problemas con las primeras dos corridas porque fue cuando esta
 </div>
 
 <audio alt=""><source src="/assets/ChronoTrigger1.mp3">Your browser does not support the audio tag.</audio>
+<audio controls="">
+<source src="assets/ChronoTrigger1.ogg" type="audio/ogg">
+<source src="assets/ChronoTrigger1.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
 
