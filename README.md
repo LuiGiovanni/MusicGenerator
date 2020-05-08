@@ -12,7 +12,7 @@ En resumen son redes que contienen un ciclo y permiten que informacion persista,
 </div>
 
 <p align="center">
-  <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-rolled.png" width="130" height="150">
+  <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-rolled.png" width="130" height="170">
 </p>
 
 <div style="text-align: justify"> 
