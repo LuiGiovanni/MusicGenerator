@@ -12,9 +12,12 @@ En resumen son redes que contienen un ciclo y permiten que informacion persista,
 </div>
 
 <p align="center">
-  <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-rolled.png">
+  <img height=150 width=130 src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-rolled.png">
 </p>
 
+<div style="text-align: justify"> 
+En resumen son redes que contienen un ciclo y permiten que informacion persista, Los humanos no comienzan a pensar desde cero cada segundo. A medida que lees este blog, comprendes cada palabra en base a tu conocimiento de las palabras previas. No tiras todo y comienzas a pensar desde cero de nuevo. Tus pensamientos tienen persistencia.<br><br> redes tradicionales no tienen este beneficio lo cual podria considerarse un gran defecto, por ejemplo digamos que ves una pelicula y quieres clasificar cada punto de la misma una red neuronal no podria razonar puntos previos de la pelicula para informar de los nuevos puntos.
+</div>
 
 <p align="center">
   <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png">
