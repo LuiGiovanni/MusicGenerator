@@ -16,12 +16,14 @@ En resumen son redes que contienen un ciclo y permiten que informacion persista,
 </p>
 
 <div style="text-align: justify"> 
-En resumen son redes que contienen un ciclo y permiten que informacion persista, Los humanos no comienzan a pensar desde cero cada segundo. A medida que lees este blog, comprendes cada palabra en base a tu conocimiento de las palabras previas. No tiras todo y comienzas a pensar desde cero de nuevo. Tus pensamientos tienen persistencia.<br><br> redes tradicionales no tienen este beneficio lo cual podria considerarse un gran defecto, por ejemplo digamos que ves una pelicula y quieres clasificar cada punto de la misma una red neuronal no podria razonar puntos previos de la pelicula para informar de los nuevos puntos.
+Como lo muestra el diagrama de arriba un grupo de datos "X_t" entran a una parte de la red neuronal A y surge un resultado o como es llamado normalmente: "output" a la que indicamos como H_t el ciclo permite que esta informacion sea mandada de una parte de la red a otra, otra manera de ver esto suceder es asi:
 </div>
 
 <p align="center">
   <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png">
 </p>
+
+Esto es basicamente la primera imagen de arriba pero "desenrollada", es como una cadena de redes, se ve mas intuitivo no? Y la verdad las redes recurrentes son algo muy sencillo de entender, son algo muy intimamente relacionado con listas y sequencias. Lo mas sorprendente es que esta idea es vieja, la primera persona que llego a mencionar estas ideas data del año 1986 por Michael I. Jordan en una coferencia de ciencia cognitiva, el problema era que en esos tiempos las maquinas no daban para tanto poder de programacion, aun en estas fechas para proyectos muy grandes a veces necesitas una computadora mas poderosa. Pero aun asi el deseo de realizar un proyecto interesante gana y se han creado cosas bastante increibles con estas redes: reconocimiento de voces, modelado de lenguaje, traductores, etc. De hecho hay un articulo que habla sobre los resultados de gente que ha <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">trabajado con estas redes</a> se las recomiendo.
 
 <div style="text-align: justify"> 
 </div>
