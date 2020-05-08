@@ -1,8 +1,9 @@
 # Generando Musica con LSTM
+#### 5/8/2020
 
 ## Una breve descripcion 
 <div style="text-align: justify"> 
-Buscando proyectos sobre aplicaciones de redes neuronales recurrentes, los principales temas que me llamaban la atencion eran sobre generación de música. Decidí centrarme en la generación de música y buscar proyectos relacionados a esto. En mi busqueda me encontré con esta entrada de blog en la que genera música de piano usando una red neuronal LSTM con Keras y entrenada con música de final fantasy, aunque estaba mas interesado en musica de Star Wars era un buen inicio.<br> Ahora, una intruducción hyper superficial sobre lo que son las redes neuronales recurrentes y LSTMs:
+Buscando proyectos sobre aplicaciones de redes neuronales recurrentes, El principal tema que me llamaba la atencion era sobre generación de música y tenia tiempo queriendo realizar un proyecto similar mas que nada porque los modelos que pueden utilizarse son muy interesantes y divertidas de poner en practica. Busque unos proyectos relacionados a esto. A los inicios del proyecto mi idea era generar musica de Star Wars asi que empeze mi busqueda por el sagrado y vasto mundo de google como todo buen programador, encontre unos buenos e interesantes proyectos: uno utilizaba un modelo muy complejo que se basaba en un articulo publicado por un estudiante el modelo se llamaba C-RNN-GAN (Continuous Recurrent Neural Network Generative Adversial Model) esta sopa de letras pueden verla <a href="https://github.com/olofmogren/c-rnn-gan">aqui</a> pero al intentar estudiarle y entenderle y con apoyo de mis maestros me di cuenta que este modelo aunque interesante era muy complicado para el tiempo que tenia asi que decidi buscar otro y al final me encontre con un modelo llamado LSTM en un post el cual generaba musica de videojuegos lo lei y me parecio bastante interesante y suficientemente sencillo como para intentar replicarlo, pero antes debemos entender que es una RNN o Red Neuronal Recurrente y que significa LSTM, a continuacion hago una breve explicacion:
 </div>
 
 ## Redes Neuronales Recurrentes
