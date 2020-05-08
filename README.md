@@ -8,15 +8,19 @@ Buscando proyectos sobre aplicaciones de redes neuronales recurrentes, El princi
 
 ## Redes Neuronales Recurrentes
 <div style="text-align: justify"> 
-Una red neuronal recurrente es una red que tiene memoria interna. Gracias a esta memoria les es posible ser más precisa en predicciones sobre que es lo siguiente que debería suceder. Ya que estas redes pueden entender contexto de la información, son el tipo de red ideal cuando se está tratando con datos secuenciales: lenguaje hablado y escrito, música, películas, el clima, etc., lo cual tiene sentido cuando piensas que por ejemplo cuando hablas lo siguiente que vas a decir depende de el flujo de la conversación hasta el momento, o que el clima de mañana depende en parte del clima de hoy.<br><br> Los humanos no comienzan a pensar desde cero cada segundo. A medida que lees este blog, comprendes cada palabra en base a tu conocimiento de las palabras previas. No tiras todo y comienzas a pensar desde cero de nuevo. Tus pensamientos tienen persistencia.
+En resumen son redes que contienen un ciclo y permiten que informacion persista, Los humanos no comienzan a pensar desde cero cada segundo. A medida que lees este blog, comprendes cada palabra en base a tu conocimiento de las palabras previas. No tiras todo y comienzas a pensar desde cero de nuevo. Tus pensamientos tienen persistencia.<br><br> redes tradicionales no tienen este beneficio lo cual podria considerarse un gran defecto, por ejemplo digamos que ves una pelicula y quieres clasificar cada punto de la misma una red neuronal no podria razonar puntos previos de la pelicula para informar de los nuevos puntos.
 </div>
+
+<p align="center">
+  <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-rolled.png">
+</p>
+
 
 <p align="center">
   <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png">
 </p>
 
 <div style="text-align: justify"> 
-Algo curioso de estas redes neuronales es que el concepto no es nuevo. Desde 1980 parecen existir pero hasta hace pocos años se  ha tenido el suficiente poder de computo para hacerlas andar y que den resultados.
 </div>
 
 ## LSTM (Long Short Term Memory)
