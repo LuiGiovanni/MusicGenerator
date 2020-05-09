@@ -17,7 +17,7 @@ Ahora antes de comenzar debemos entender un poco de terminología y entender alg
    
 ### Redes Neuronales Recurrentes
 <div style="text-align: justify">
-Una red neuronal recurrente trabaja en ciclos de retroalimentacion de datos, al momento de ir avanzando durante los pasos o épocas (epochs) de entrenamiento la informacion persiste. Los humanos no comienzan a pensar desde cero cada segundo. A medida que lees este blog, comprendes cada palabra en base a tu conocimiento de las palabras previas, no olvidas todo y comienzas a pensar desde cero nuevamente, es decir que tus pensamientos tienen persistencia.<br><br> Redes tradicionales no tienen este beneficio lo cual podría considerarse un gran defecto, por ejemplo, digamos que ves una película y quieres clasificar cada punto de esta, una red neuronal no podría razonar puntos previos de la película para informar de los nuevos puntos, es por ello que recurrimos a utilizar redes neuronales recurrentes.
+Una red neuronal recurrente trabaja en ciclos de retroalimentacion de datos, al momento de ir avanzando durante los pasos o épocas (epochs) de entrenamiento la informacion persiste. Los humanos no comienzan a pensar desde cero cada segundo. A medida que lees este blog, comprendes cada palabra en base a tu conocimiento de las palabras previas, no olvidas todo y comienzas a pensar desde cero nuevamente, es decir que tus pensamientos tienen persistencia.<br><br> Redes tradicionales no tienen este beneficio lo cual podría considerarse un gran defecto, por ejemplo, digamos que ves una película y quieres clasificar cada punto de esta, una red neuronal no podría razonar puntos previos de la película para informar de los nuevos puntos, es por ello que recurrimos a utilizar redes neuronales recurrentes. En el siguente diagrama podemos observar como funciona una red neural recurrente:
 </div>
 
 <p align="center">
@@ -25,7 +25,7 @@ Una red neuronal recurrente trabaja en ciclos de retroalimentacion de datos, al 
 </p>
 
 <div style="text-align: justify"> 
-Como lo muestra el diagrama de arriba un grupo de datos "X_t" entran a una parte de la red neuronal A y surge un resultado o como es llamado normalmente: "output" a la que indicamos como H_t el ciclo permite que esta información sea mandada de una parte de la red a otra, otra manera de ver esto suceder es así:
+"X_t" representa un grupo de datos que entran a una parte de la red neuronal "A" y surge un resultado "H_t" o como es llamado normalmente: "output". El ciclo permite que esta información sea mandada de una parte de la red a otra, otra manera de ver esto suceder es así:
 </div>
 
 <p align="center">
