@@ -43,13 +43,7 @@ Estas redes fueron creadas explicitamente para resolver los problemas ya descrit
 </p>
 
 <div style="text-align: justify">
-Aqui viene lo bueno, una red LSTM tiene una estructura mas compleja, dentro de cada modulo tiene cuatro capas que interactuan de una manera muy especial! Lo principal en las LSTM es un estado de cada celda o "cell state" (C_t) esta es la linea horizontal que corre en la parte superior pienselo como una cinta transportadora la cual lleva los cell states al final con cambios minimos, la LSTM puede hacerle cambios a los cell states, regulado por algo llamado "gates" o compuertas las cuales se usan para opcionalmente dejar pasar informacion. Estan compuestas por una capa de red neuronal sigma y un operacion producto-punto. El sigma envia un valor entre 0 y 1 el cual indica que tanto de cada componente dejar pasar con 0 siendo "no dejes pasar nada", los LSTM tienen tres de estas compuertas para proteger muy bien la informacion del cell state.<br><br> Ahora cada sigma tiene un objetivo distinto el primer sigma se utiliza para "olvidar" informacion que se considera innecesaria 
-</div>
-
-
-### LSTM paso a paso
-<div style="text-align: justify">
-
+Aqui viene lo bueno, una red LSTM tiene una estructura mas compleja, dentro de cada modulo tiene cuatro capas que interactuan de una manera muy especial! Lo principal en las LSTM es un estado de cada celda o "cell state" (C_t) esta es la linea horizontal que corre en la parte superior pienselo como una cinta transportadora la cual lleva los cell states al final con cambios minimos, la LSTM puede hacerle cambios a los cell states, regulado por algo llamado "gates" o compuertas las cuales se usan para opcionalmente dejar pasar informacion. Estan compuestas por una capa de red neuronal sigma y un operacion producto-punto. El sigma envia un valor entre 0 y 1 el cual indica que tanto de cada componente dejar pasar con 0 siendo "no dejes pasar nada", los LSTM tienen tres de estas compuertas para proteger muy bien la informacion del cell state.<br><br> Explicar paso a paso como funciona un LSTM tomaria mucho tiempo, para mas informacion recomiendo que vean el blog de <a href="https://github.com/colah/">colah</a> donde explia todo mas a fondo <a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/">aqui</a>
 </div>
 
 ## Music21
