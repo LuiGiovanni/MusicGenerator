@@ -181,7 +181,7 @@ Al final de todo me siento muy satisfecho con los resultados que me dio el proye
 </div><br>
 
 ## Agradecimientos
-- A Sigurður Skúli por su <a href="https://towardsdatascience.com/how-to-generate-music-using-a-lstm-neural-network-in-keras-68786834d4c5">blog</a> sobre generacion de musica con LSTM, el codigo original tambien pueden hallarlo aqui
+- A Sigurður Skúli por su <a href="https://towardsdatascience.com/how-to-generate-music-using-a-lstm-neural-network-in-keras-68786834d4c5">blog</a> sobre generacion de musica con LSTM, el codigo original tambien pueden hallarlo aqui.
 - A Christopher Olah por su <a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/">post</a> sobre redes recurrentes y LSTM me ayudo a entender bastante y por las imagenes que fueron creadas por el.
-- A el maestro Julio Waissman por sus clases sobre redes neuronales y apoyo con dudas
-- A la maestra Sonia Sosa por su apoyo en como obtener la informacion y manejar mi metodo de trabajo
+- A el maestro Julio Waissman por sus clases sobre redes neuronales y apoyo con dudas.
+- A la maestra Sonia Sosa por su apoyo en como obtener la informacion y manejar mi metodo de trabajo, ademas de empujarme a poner lo mejor de mi en este proyecto.
