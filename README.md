@@ -1,23 +1,23 @@
 # Generando Musica con LSTM
 
-## Una breve introduccion 
+## Una breve introducción
 <div style="text-align: justify">  
 A lo largo de los años hemos estado utilizado redes neuronales para mejorar muchos aspectos de nuestras vidas: desde recomendaciones de artículos que deseamos comprar, generar texto al estilo de algún autor en particular y hasta podemos <a href="https://jjups96.github.io/fast-style-transfer/">cambiar el estilo del arte de alguna imagen</a>. Mas recientemente, ha habido bastantes tutoriales y cursos de como generar texto a partir de redes neuronales y bastantes blogs de personas generando cambios de imágenes pero no mucho sobre generar música con redes neuronales, ahora esto no será un tutorial como tal, más que nada mi enfoque es mostrarles este mundo tan interesante e invitarlos a que se sumen a este grupo de personas que estudian o intentan mejorar el mundo de las redes neuronales.<br>
 </div>
 
-## Porque generar musica?
+## Porque escogí generar música?
 <div style="text-align: justify">   
-El principal tema que me llamaba la atención era sobre generación de música, tenía tiempo con el deseo de realizar un proyecto similar más que nada porque los modelos que pueden utilizarse son muy interesantes y divertidos de poner en práctica. Busque unos proyectos relacionados a esto. A los inicios del proyecto mi idea era generar música de Star Wars así que empecé mi búsqueda por el sagrado y vasto mundo de Google como todo buen programador, encontré unos buenos e interesantes proyectos: uno utilizaba un modelo muy complejo que se basaba en un artículo publicado por un estudiante el modelo se llamaba C-RNN-GAN (Continuous Recurrent Neural Network Generative Adversial Model) esta sopa de letras pueden verla <a href="https://github.com/olofmogren/c-rnn-gan">aqui</a> este blog y repositorio fueron hechos por <a href="https://github.com/olofmogren">olofmorgen</a> les recomiendo checar su GitHub y ver sus proyectos son muy interesantes, pero al intentar estudiar el modelo y entenderle y con apoyo de mis maestros me di cuenta que este modelo aunque interesante era muy complicado para el tiempo que tenía así que decidí buscar otro y al final me encontré con un modelo llamado LSTM en un post el cual generaba música de videojuegos lo leí y me pareció bastante interesante.
+El principal tema que me llamaba la atención era sobre generación de música, tenía tiempo con el deseo de realizar un proyecto similar más que nada porque los modelos que pueden utilizarse son muy interesantes y divertidos de poner en práctica. Busqué unos proyectos relacionados a esto. A los inicios del proyecto mi idea era generar música de Star Wars así que empecé mi búsqueda por el sagrado y vasto mundo de Google como todo buen programador, encontré unos buenos e interesantes proyectos: uno utilizaba un modelo muy complejo que se basaba en un artículo publicado por un estudiante el modelo se llamaba C-RNN-GAN (Continuous Recurrent Neural Network Generative Adversial Model) esta sopa de letras pueden verla <a href="https://github.com/olofmogren/c-rnn-gan">aqui</a> este blog y repositorio fueron hechos por <a href="https://github.com/olofmogren">olofmorgen</a> les recomiendo checar su GitHub y ver sus proyectos son muy interesantes, pero al intentar estudiar el modelo y entenderle y con apoyo de mis maestros me di cuenta que este modelo aunque interesante era muy complicado para el tiempo que tenía así que decidí buscar otro y al final me encontré con un modelo llamado LSTM en un post el cual generaba música de videojuegos lo leí y me pareció bastante interesante.
 </div>
 
-## Un poco de explicacion.
+## Un poco de explicación.
 <div style="text-align: justify">
 Ahora antes de comenzar debemos entender un poco de terminología y entender algunos conceptos sobre redes neuronales que serán necesarios entender por lo menos a un nivel superficial.
 </div>
    
 ### Redes Neuronales Recurrentes
 <div style="text-align: justify"> 
-En resumen, son redes que contienen un ciclo y permiten que información persista, Los humanos no comienzan a pensar desde cero cada segundo. A medida que lees este blog, comprendes cada palabra en base a tu conocimiento de las palabras previas. No tiras todo y comienzas a pensar desde cero de nuevo. Tus pensamientos tienen persistencia.<br><br> redes tradicionales no tienen este beneficio lo cual podría considerarse un gran defecto, por ejemplo, digamos que ves una película y quieres clasificar cada punto de esta, una red neuronal no podría razonar puntos previos de la película para informar de los nuevos puntos.
+Son redes que contienen un ciclo y permiten que información persista, Los humanos no comienzan a pensar desde cero cada segundo. A medida que lees este blog, comprendes cada palabra en base a tu conocimiento de las palabras previas, no olvidas todo y comienzas a pensar desde cero nuevamente, es decir que tus pensamientos tienen persistencia.<br><br> redes tradicionales no tienen este beneficio lo cual podría considerarse un gran defecto, por ejemplo, digamos que ves una película y quieres clasificar cada punto de esta, una red neuronal no podría razonar puntos previos de la película para informar de los nuevos puntos.
 </div>
 
 <p align="center">
