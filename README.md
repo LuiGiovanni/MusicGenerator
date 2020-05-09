@@ -17,7 +17,7 @@ Ahora antes de comenzar debemos entender un poco de terminología y entender alg
    
 ### Redes Neuronales Recurrentes
 >Red neuronal que integra bucles de realimentación, permitiendo a través de ellos que la información persista durante algunos pasos ó épocas de entrenamiento.
-##### Definicion de Wikipedia
+##### Definición de Wikipedia
 <br>
 <div style="text-align: justify"> 
 Los humanos no comienzan a pensar desde cero cada segundo. A medida que lees este blog, comprendes cada palabra en base a tu conocimiento de las palabras previas, no olvidas todo y comienzas a pensar desde cero nuevamente, es decir que tus pensamientos tienen persistencia.<br><br> redes tradicionales no tienen este beneficio lo cual podría considerarse un gran defecto, por ejemplo, digamos que ves una película y quieres clasificar cada punto de esta, una red neuronal no podría razonar puntos previos de la película para informar de los nuevos puntos.
