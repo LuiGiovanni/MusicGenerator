@@ -46,6 +46,10 @@ Estas redes fueron creadas explicitamente para resolver los problemas ya descrit
 Aqui viene lo bueno, una red LSTM tiene una estructura mas compleja, dentro de cada modulo tiene cuatro capas que interactuan de una manera muy especial! Lo principal en las LSTM es un estado de cada celda o "cell state" (C_t) esta es la linea horizontal que corre en la parte superior pienselo como una cinta transportadora la cual lleva los cell states al final con cambios minimos, la LSTM puede hacerle cambios a los cell states, regulado por algo llamado "gates" o compuertas las cuales se usan para opcionalmente dejar pasar informacion. Estan compuestas por una capa de red neuronal sigma y un operacion producto-punto. El sigma envia un valor entre 0 y 1 el cual indica que tanto de cada componente dejar pasar con 0 siendo "no dejes pasar nada", los LSTM tienen tres de estas compuertas para proteger muy bien la informacion del cell state.<br><br> Explicar paso a paso como funciona un LSTM tomaria mucho tiempo, para mas informacion recomiendo que vean el blog de <a href="https://github.com/colah/">colah</a> donde explia todo mas a fondo <a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/">aqui</a>
 </div>
 
+<p align="center">
+  <img src="assets/LSTM3-chain.png">
+</p>
+
 ## Music21
 <div style="text-align: justify">
 Lo que hace el proyecto es leer la música en formato MIDI usando music21 para extraer las notas de lo archivos MIDI con los que se quiere aprender para generar música similar.<br><br> Music21 es una coleccion de herramientas para ayudar a estudiantes y otros hallar respuestas de musica mas facilmente, cosas como "Me pregunto cuantas veces Bach hace eso" o "Desearia conocer cual banda fue la primera en usar ese progeso de acordes" o si quieres crear un programa el cual automaticamente escriba mas musica como es en mi caso.
