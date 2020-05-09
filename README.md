@@ -74,7 +74,7 @@ Primero les dire muy basico que es lo que esta pasando con el codigo: empieza ob
 </p>
 
 <div style="text-align: justify">
-En cuanto a mi entrenamiento, intente un cambio con el numero batches pero con 32 me causaba resultados que no me gustaron asi que fui a 64 y el número de epochs a 250. el objetivo es hallar un punto donde el numero de epoch sea minimo y tu perdida en el entrenamiento sea lo mas bajo posible.<br> Otro defecto que tiene ahorita el codigo es que cuando termina el entrenamiento te genera un numero de archivos hdf5 igual a el numero epoch, el titulo de este archivo tiene el numero de epoch y la perdida y cada vez que corrias el predict.py para generar una nueva cancion debias cambiar el archivo que busca a el nuevo archivo hdf5. Esto a mi no me gustaba ya que es muy incomodo asi que lo cambie para que el nombre del archivo no deba cambiarse. Si quieren empezar probando el codigo pueden correr predict.py para que les genere algunas canciones y si quieren probar el entrenamiento pueden reducir el numero de epochs a algo mas razonable y moverle a los valores para ir entendiendo que esta sucediendo con el codigo, se los recomiendo. Por ahora veamos algunos resultados
+En cuanto a mi entrenamiento, intente un cambio con el numero batches pero con 32 me causaba resultados que no me gustaron asi que fui a 64 y el número de epochs a 250. el objetivo es hallar un punto donde el numero de epoch sea minimo y tu perdida en el entrenamiento sea lo mas bajo posible.<br><br> Otro defecto que tiene ahorita el codigo es que cuando termina el entrenamiento te genera un numero de archivos hdf5 igual a el numero epoch, el titulo de este archivo tiene el numero de epoch y la perdida y cada vez que corrias el predict.py para generar una nueva cancion debias cambiar el archivo que busca a el nuevo archivo hdf5. Esto a mi no me gustaba ya que es muy incomodo asi que lo cambie para que el nombre del archivo no deba cambiarse. Si quieren empezar probando el codigo pueden correr predict.py para que les genere algunas canciones y si quieren probar el entrenamiento pueden reducir el numero de epochs a algo mas razonable y moverle a los valores para ir entendiendo que esta sucediendo con el codigo, se los recomiendo. Por ahora veamos algunos resultados
 </div>
 
 ## Resultados
@@ -160,6 +160,11 @@ No sabia que esperar de estos resultados, pensaba que no quedarian tan bien las 
 <source src="assets/Combine.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio><br>
+
+## Conclusion
+<div style="text-align: justify">
+Al final de todo me siento muy satisfecho con los resultados que me dio el proyecto y me siento satisfecho con el trabajo que he realizado el tema de las redes recurrentes y machine learning estan en un puto muy temprano y emocionante, a todos los que lean este blog se los recomiendo y espero que encuentren un gusto como el que he encontrado yo. Todos los links llevan a lecturas muy interesantes de personas que han hecho un esfuerzo y aunque no vayan a trabajar en esto les recomiendo estas lecturas y estudiar mas del tema se daran cuenta que mucho de la vida cotidiana utiliza redes recurrentes y machine learning en general.
+</div><br>
 
 ## Agradecimientos
 - A Sigurður Skúli por su <a href="https://towardsdatascience.com/how-to-generate-music-using-a-lstm-neural-network-in-keras-68786834d4c5">blog</a> sobre generacion de musica con LSTM
