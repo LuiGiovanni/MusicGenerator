@@ -23,19 +23,28 @@ Como lo muestra el diagrama de arriba un grupo de datos "X_t" entran a una parte
   <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png">
 </p>
 
+<div style="text-align: justify"> 
 Esto es basicamente la primera imagen de arriba pero "desenrollada", es como una cadena de redes, se ve mas intuitivo no? Y la verdad las redes recurrentes son algo muy sencillo de entender, son algo muy intimamente relacionado con listas y sequencias. Lo mas sorprendente es que esta idea es vieja, la primera persona que llego a mencionar estas ideas data del año 1986 por Michael I. Jordan en una coferencia de ciencia cognitiva, el problema era que en esos tiempos las maquinas no daban para tanto poder de programacion, aun en estas fechas para proyectos muy grandes a veces necesitas una computadora mas poderosa. Pero aun asi el deseo de realizar un proyecto interesante gana y se han creado cosas bastante increibles con estas redes: reconocimiento de voces, modelado de lenguaje, traductores, etc. De hecho hay un articulo que habla sobre los resultados de gente que ha <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">trabajado con estas redes</a> se las recomiendo.
+</div>
+
+### Definiendo el problema a largo plazo de redes recurrentes
 
 <div style="text-align: justify"> 
+Una de las cosas mas llamativas en cuanto a redes recurrentes es cuando se quiere hacer una conexion entre informacion pasada e informacion presente, por ejemplo querer predecir la siguiente palabra dado una serie de palabras en un texto como "Mi camisa es de color azul" no es necesario mucho contexto, el problema se presenta cuando quieres hacer algo como "Mi familia es de Mexico...por eso hablo español" el objetivo en este caso es querer indicar que el idoma hablado es español pero si querermos reducir las posibilidades y hallar la palabra "español" debemos tener mas contexto, especificamente es de Mexico. Desafortunadamente entre mas crezca la informacion, mas dificil sera para la red aprender a conectar la informacion.<br><br> La teoria establece que una red recurrente podria resolver estos tipos de problemas pero solamente si el programador escoge perfectamente los parametros, afortunadamente las LSTM no tienes estas limitaciones!
 </div>
 
 ## LSTM (Long Short Term Memory)
 <div style="text-align: justify">
-Las redes LSTM son una variante de red neuronal recurrente. Estas redes surgieron principalmente para solventar un problema de dependencia de las redes recurrentes. Cuando el contexto necesario para predecir es de relativamente corto plazo, las redes recurrentes no tienen problemas, pero cuando se necesita de información que se remonte a entradas mucho más anteriores, se les dificulta predecir correctamente. No es que sea imposible, es técnicamente cierto que bajo ciertos pesos es posible que la red no tenga problemas de ese tipo, pero en la práctica esto no sucede. Aquí es donde entran las redes LSTM a salvar el día ya que fueron diseñadas para combatir justo ese problema.<br><br> Así como las redes recurrentes, las redes LSTM no son especialmenten nuevas. Existen desde más o menos 1990 pero han tenido que esperar hasta el poder de computo actual para poder mostrar buenos resultados.
+Estas redes fueron creadas explicitamente para resolver los problemas ya descritos de las rede recurrentes, pero como es que funcionan? Y cuales son la diferencias entre las dos? Pues, una red recurrente y una LSTM amba tienen el diseño de cadena antes mostrado, la red recurrente normalmente tiene una estructura bastante simple como una simple capa tanh
 </div>
 
 <p align="center">
   <img src="https://i.pinimg.com/originals/27/95/bc/2795bc16b012322f7767cd4d940ba2e3.png">
 </p>
+
+<div style="text-align: justify">
+Aqui viene lo bueno, una red LSTM tiene una estructura mas compleja, dentro de cada modulo tiene cuatro capas que interactuan de una manera muy especial! Lo principal en las LSTM es un estado de cada celda o "cell state" (C_t) esta es la linea horizontal que corre en la parte superior pienselo como una cinta transportadora la cual lleva los cell states al final con cambios minimos, la LSTM puede hacerle 
+</div>
 
 ## Music21
 <div style="text-align: justify">
