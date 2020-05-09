@@ -25,7 +25,7 @@ Una red neuronal recurrente trabaja en ciclos de retroalimentacion de datos, al 
 </p>
 
 <div style="text-align: justify"> 
-"X_t" representa un grupo de datos que entran a una parte de la red neuronal "A" y surge un resultado "H_t" o como es llamado normalmente: "output". El ciclo permite que esta información sea mandada de una parte de la red a otra, otra manera de ver esto suceder es así:
+"X_t" representa un grupo de datos que entran a una parte de la red neuronal "A" y surge un resultado "H_t" o como es llamado normalmente: "output". Otra manera de ver esto suceder es así. Desarrollando el diagrama obtenemos lo siguiente, El ciclo permite que esta información sea mandada de una parte de la red a otra:
 </div>
 
 <p align="center">
