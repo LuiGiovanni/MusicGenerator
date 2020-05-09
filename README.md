@@ -8,10 +8,15 @@ A lo largo de los años hemos estado utilizado redes neuronales para mejorar muc
 
 ## Porque generar musica?
 <div style="text-align: justify">   
-El principal tema que me llamaba la atención era sobre generación de música, tenía tiempo con el deseo de realizar un proyecto similar más que nada porque los modelos que pueden utilizarse son muy interesantes y divertidos de poner en práctica. Busque unos proyectos relacionados a esto. A los inicios del proyecto mi idea era generar música de Star Wars así que empecé mi búsqueda por el sagrado y vasto mundo de Google como todo buen programador, encontré unos buenos e interesantes proyectos: uno utilizaba un modelo muy complejo que se basaba en un artículo publicado por un estudiante el modelo se llamaba C-RNN-GAN (Continuous Recurrent Neural Network Generative Adversial Model) esta sopa de letras pueden verla <a href="https://github.com/olofmogren/c-rnn-gan">aqui</a> este blog y repositorio fueron hechos por <a href="https://github.com/olofmogren">olofmorgen</a> les recomiendo checar su GitHub y ver sus proyectos son muy interesantes, pero al intentar estudiar el modelo y entenderle y con apoyo de mis maestros me di cuenta que este modelo aunque interesante era muy complicado para el tiempo que tenía así que decidí buscar otro y al final me encontré con un modelo llamado LSTM en un post el cual generaba música de videojuegos lo leí y me pareció bastante interesante y suficientemente sencillo como para intentar replicarlo, pero antes debemos entender que es una RNN o Red Neuronal Recurrente y que significa LSTM, después de esta no tan breve introducción, es momento de aprender por encima que es una red recurrente y que rayos es un LSTM:
+El principal tema que me llamaba la atención era sobre generación de música, tenía tiempo con el deseo de realizar un proyecto similar más que nada porque los modelos que pueden utilizarse son muy interesantes y divertidos de poner en práctica. Busque unos proyectos relacionados a esto. A los inicios del proyecto mi idea era generar música de Star Wars así que empecé mi búsqueda por el sagrado y vasto mundo de Google como todo buen programador, encontré unos buenos e interesantes proyectos: uno utilizaba un modelo muy complejo que se basaba en un artículo publicado por un estudiante el modelo se llamaba C-RNN-GAN (Continuous Recurrent Neural Network Generative Adversial Model) esta sopa de letras pueden verla <a href="https://github.com/olofmogren/c-rnn-gan">aqui</a> este blog y repositorio fueron hechos por <a href="https://github.com/olofmogren">olofmorgen</a> les recomiendo checar su GitHub y ver sus proyectos son muy interesantes, pero al intentar estudiar el modelo y entenderle y con apoyo de mis maestros me di cuenta que este modelo aunque interesante era muy complicado para el tiempo que tenía así que decidí buscar otro y al final me encontré con un modelo llamado LSTM en un post el cual generaba música de videojuegos lo leí y me pareció bastante interesante y suficientemente sencillo como para intentar replicarlo.
 </div>
 
-## Redes Neuronales Recurrentes
+## Un poco de explicacion.
+<div style="text-align: justify">
+Ahora antes de comenzar debemos entender un poco de terminología y entender algunas cosas sobre redes neuronales la cual se debe aclarar.
+</div>
+   
+### Redes Neuronales Recurrentes
 <div style="text-align: justify"> 
 En resumen, son redes que contienen un ciclo y permiten que información persista, Los humanos no comienzan a pensar desde cero cada segundo. A medida que lees este blog, comprendes cada palabra en base a tu conocimiento de las palabras previas. No tiras todo y comienzas a pensar desde cero de nuevo. Tus pensamientos tienen persistencia.<br><br> redes tradicionales no tienen este beneficio lo cual podría considerarse un gran defecto, por ejemplo, digamos que ves una película y quieres clasificar cada punto de esta una red neuronal no podría razonar puntos previos de la película para informar de los nuevos puntos.
 </div>
@@ -32,13 +37,13 @@ Como lo muestra el diagrama de arriba un grupo de datos "X_t" entran a una parte
 Esto es básicamente la primera imagen de arriba, pero desarrollado, es como una cadena de redes, ¿se ve más intuitivo no? Las redes recurrentes desde un punto de vista práctico son algo muy íntimamente relacionado con listas y secuencias. Lo más sorprendente es que esta idea es vieja, la primera persona que llego a mencionar estas ideas data del año 1986, el problema era que en esos tiempos las maquinas no daban para tanto poder de programación, aun en estas fechas para proyectos muy grandes a veces necesitas una computadora más poderosa. Pero aun así se han creado proyectos bastante increíbles con estas redes: reconocimiento de voces, modelado de lenguaje, traductores, etc. De hecho, hay un artículo que habla sobre los resultados de gente que ha <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">trabajado con estas redes</a> se las recomiendo.
 </div>
 
-### Definiendo el problema a largo plazo de redes recurrentes
+#### Definiendo el problema a largo plazo de redes recurrentes
 
 <div style="text-align: justify">   
 Una de las cosas más llamativas en cuanto a redes recurrentes es cuando se quiere hacer una conexión entre información pasada e información presente, por ejemplo querer predecir la siguiente palabra dado una serie de palabras en un texto como "Mi camisa es de color azul" no es necesario mucho contexto, el problema se presenta cuando quieres hacer algo como "Mi familia es de México...por eso hablo español" el objetivo en este caso es querer indicar que el idioma hablado es español pero si queremos reducir las posibilidades y hallar la palabra "español" debemos tener más contexto, específicamente es de México. Desafortunadamente entre más crezca la información, más difícil será para la red aprender a conectar la información.<br><br> La teoría establece que una red recurrente podría resolver estos tipos de problemas, pero solamente si el programador escoge perfectamente los parámetros, ¡afortunadamente las LSTM no tienes estas limitaciones!
 </div>
 
-## LSTM (Long Short Term Memory)
+### LSTM (Long Short Term Memory)
 <div style="text-align: justify">
 Estas redes fueron creadas explícitamente para resolver los problemas ya descritos de las redes recurrentes, pero ¿cómo es que funcionan? ¿Y cuáles son las diferencias entre las dos? Pues, una red recurrente y una LSTM ambas tienen el diseño de cadena antes mostrado, la red recurrente normalmente tiene una estructura bastante simple como una simple capa tanh
 </div>
@@ -59,9 +64,14 @@ Aquí viene lo bueno, una red LSTM tiene una estructura más compleja, dentro de
 Explicar paso a paso como funciona un LSTM toman mucho tiempo, para más información recomiendo que vean el blog de <a href="https://github.com/colah/">colah</a> donde explica todo más a fondo <a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/">aqui</a>
 </div>
 
-## Music21
+### Music21
 <div style="text-align: justify">
 Lo que hace el proyecto es leer la música en formato MIDI usando music21 para extraer las notas de los archivos MIDI con los que se quiere aprender para generar música similar.<br><br> Music21 es una colección de herramientas para ayudar a estudiantes y otros hallar respuestas de música más fácilmente, cosas como "Me pregunto cuántas veces Bach hace eso" o "desearía conocer cual banda fue la primera en usar ese progreso de acordes" o si quieres crear un programa el cual automáticamente escriba más música como es mi caso.
+</div>
+
+### Keras
+<div style="text-align: justify">
+Básicamente es una API de redes neuronales de alto nivel. Esta simplifica interacciones con Tensorflow, se creó con el enfoque de poder realizar experimentaciones rápidas. El autor original utilizo Keras para poder crear y entrenar el modelo LSTM, ya que el modelo es entrenado se utiliza para generar notación musical para nuestra música.
 </div>
 
 ## Musica Utilizada
