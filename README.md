@@ -1,5 +1,4 @@
 # Generando Musica con LSTM
-#### 5/8/2020
 
 ## Una breve introduccion 
 <div style="text-align: justify">  
