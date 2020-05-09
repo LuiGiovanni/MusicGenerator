@@ -66,15 +66,15 @@ El proyecto original utiliza música de Final Fantasy para entrenar su red. No h
 
 ## El Modelo
 <div style="text-align: justify">
-El modelo de la red es muy similar al modelo original, los únicos cambios que hice fue aumentar el número de neuronas de las capas de LSTM y aumentar el dropout entre las capas
-</div>
+Primero les dire muy basico que es lo que esta pasando con el codigo: empieza obteniendo la musica y utilizando Music21 para convertir las notas de la musica a datos que son mas manejables por el programa, los guarda en un archivo llamado "data/notes" esto lo hace cada ves que corres el programa asi que si cambias la musica en tu carpeta "midi" volvera a convertir esa musica en data para poder entrenarla, lo siguiente que hace es preparar las secuencias que seran usadas por la red neuronal obteniendo todos los "pitch names" de las notas que ya obtuvimos crea un diccionario y mapea los pitch a enteros, despues de esto crea secuencias de inputs y sus outputs correspondientes despues hace un reshape de numpy al input para algo mas compatible con capas LSTM y normaliza el input.<br><br> Ahora lo interesante y donde estaran haciendo cambios para entender como funciona la red, vamos a crear la estructura de la red neuronal. y al final entrenamos nuestra red
+</div><br>
 
 <p align="center">
   <img src="https://i.gyazo.com/8559083d1ead5a2499f8341bf6b63c76.png">
 </p>
 
 <div style="text-align: justify">
-Además en cuanto al entrenamiento, intente un cambio con el numero batches pero con 32 me causaba resultados que no me gustaron asi que regrese a 64 y el número de epochs a 250.<br> Aparte del cambio al modelo, no hice muchos cambios que valgan la pena mencionar solamente cosas que ayudaron al entrenamiento
+En cuanto a mi entrenamiento, intente un cambio con el numero batches pero con 32 me causaba resultados que no me gustaron asi que fui a 64 y el número de epochs a 250. el objetivo es hallar un punto donde el numero de epoch sea minimo y tu perdida en el entrenamiento sea lo mas bajo posible.<br> Otro defecto que tiene ahorita el codigo es que cuando termina el entrenamiento te genera un numero de archivos hdf5 igual a el numero epoch, el titulo de este archivo tiene el numero de epoch y la perdida y cada vez que corrias el predict.py para generar una nueva cancion debias cambiar el archivo que busca a el nuevo archivo hdf5. Esto a mi no me gustaba ya que es muy incomodo asi que lo cambie para que el nombre del archivo no deba cambiarse. Si quieren empezar probando el codigo pueden correr predict.py para que les genere algunas canciones y si quieren probar el entrenamiento pueden reducir el numero de epochs a algo mas razonable y moverle a los valores para ir entendiendo que esta sucediendo con el codigo, se los recomiendo. Por ahora veamos algunos resultados
 </div>
 
 ## Resultados
