@@ -70,7 +70,7 @@ Lo que hace el proyecto es leer la música en formato MIDI usando music21 para e
 
 ### Keras
 <div style="text-align: justify">
-Básicamente es una API de redes neuronales de alto nivel. Esta simplifica interacciones con Tensorflow, se creó con el enfoque de poder realizar experimentaciones rápidas. El autor original utilizo Keras para poder crear y entrenar el modelo LSTM, ya que el modelo es entrenado se utiliza para generar notación musical para nuestra música.
+Básicamente es una API de redes neuronales de alto nivel. Esta simplifica interacciones con Tensorflow, se creó con el enfoque de poder realizar experimentaciones rápidas. Se utilizo Keras para poder crear y entrenar el modelo LSTM, ya que el modelo es entrenado se utiliza para generar notación musical para nuestra música.
 </div>
 
 ## Musica Utilizada
