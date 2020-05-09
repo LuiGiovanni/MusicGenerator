@@ -16,7 +16,7 @@ Ahora antes de comenzar debemos entender un poco de terminología y entender alg
 </div>
    
 ### Redes Neuronales Recurrentes
->Red neuronal que integra bucles de realimentación, permitiendo a través de ellos que la información persista durante algunos pasos ó épocas de entrenamiento
+>Red neuronal que integra bucles de realimentación, permitiendo a través de ellos que la información persista durante algunos pasos ó épocas de entrenamiento.
 ##### Definicion de Wikipedia
 <br>
 <div style="text-align: justify"> 
