@@ -60,7 +60,7 @@ Aquí viene lo bueno, una red LSTM tiene una estructura más compleja, dentro de
 </p><br>
 
 <div style="text-align: justify">  
-Explicar paso a paso como funciona un LSTM toman mucho tiempo, para más información recomiendo que vean el blog de <a href="https://github.com/colah/">colah</a> donde explica todo más a fondo <a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/">aqui</a>
+Explicar paso a paso como funciona un LSTM tomaría mucho tiempo, para más información recomiendo que vean el blog de <a href="https://github.com/colah/">colah</a> donde explica todo más a fondo <a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/">aqui</a>
 </div>
 
 ### Music21
@@ -80,7 +80,7 @@ El proyecto original utiliza música de Final Fantasy para entrenar su red. No h
 
 ## El Modelo
 <div style="text-align: justify">
-Primero les diré muy básico que es lo que está pasando con el código: empieza obteniendo la música y utilizando Music21 para convertir las notas de la música a datos que son más manejables por el programa, los guarda en un archivo llamado "data/notes" esto lo hace cada vez que corres el programa así que si cambias la música en tu carpeta "midi" volverá a convertir esa música en data para poder entrenarla, lo siguiente que hace es preparar las secuencias que serán usadas por la red neuronal obteniendo todos los "pitch names" de las notas que ya obtuvimos crea un diccionario y mapea los pitch a enteros, después de esto crea secuencias de inputs y sus outputs correspondientes después hace un reshape de numpy al input para algo más compatible con capas LSTM y normaliza el input.<br><br> Ahora lo interesante y donde estarán haciendo cambios para entender cómo funciona la red, vamos a crear la estructura de la red neuronal. y al final entrenamos nuestra red.
+Primero les diré muy básico que es lo que está pasando con el código: empieza obteniendo la música y utilizando Music21 para convertir las notas de la música a datos que son más manejables por el programa, los guarda en un archivo llamado "data/notes" esto lo hace cada vez que corres el programa así que si cambias la música en tu carpeta "midi" volverá a convertir esa música en datos para poder entrenarla, lo siguiente que hace es preparar las secuencias que serán usadas por la red neuronal obteniendo todos los "pitch names", de las notas que ya obtuvimos crea un diccionario y mapea los pitch a enteros, después de esto crea secuencias de entradas y sus salidas correspondientes, después reforma las entradas para algo más compatible con capas LSTM y normaliza las entradas.<br><br> Ahora lo interesante y donde estarán haciendo cambios para entender cómo funciona la red, vamos a crear la estructura de la red neuronal. y al final entrenamos nuestra red.
 </div><br>
 
 <p align="center">
