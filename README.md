@@ -39,7 +39,7 @@ Estas redes fueron creadas explicitamente para resolver los problemas ya descrit
 </div>
 
 <p align="center">
-  <img src="https://i.pinimg.com/originals/27/95/bc/2795bc16b012322f7767cd4d940ba2e3.png">
+  <img src="assets/LSTM3-SimpleRNN.png">
 </p>
 
 <div style="text-align: justify">
