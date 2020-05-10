@@ -91,7 +91,7 @@ Primero les diré muy básico que es lo que está pasando con el código: empiez
 
 <div style="text-align: justify">
 En este modelo se uso 4 tipos de capas distintas: 
-</div><br>
+</div>
 
 ##### Capa LSTM: Toma una secuencia como entrada (input) y puede devolver una secuencia o una matriz 
 ##### Capa dropout (expulsar): Esta capa consiste en ajustar una fraccion de entradas a 0 en cada actualizacion durante el entrenamiento para prevenir sobreajuste (overfitting), la fraccion de entradas se determina por el parametro usado con la capa.
