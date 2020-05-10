@@ -44,8 +44,7 @@ Una de las cosas más llamativas en cuanto a redes recurrentes es cuando se quie
 
 ### LSTM (Long Short Term Memory)
 <div style="text-align: justify">
-Estas redes fueron creadas explícitamente para resolver los problemas ya descritos anteriormente de las redes recurrentes, pero ¿cómo es que funcionan? Y ¿ cuáles son las diferencias entre las dos?<br><br>
-Una red recurrente y una LSTM tienen el diseño de cadena antes mostrado, la red recurrente normalmente tiene una estructura bastante simple como una simple capa tanh, mientras que la red LSTM tiene una estructura más compleja, pues dentro de cada módulo tiene cuatro capas que interactúan de una manera muy especial. 
+Estas redes fueron creadas explícitamente para resolver los problemas ya descritos anteriormente de las redes recurrentes, pero ¿cómo es que funcionan? Y ¿ cuáles son las diferencias entre las dos?<br><br> Una red recurrente y una LSTM tienen el diseño de cadena antes mostrado, la red recurrente normalmente tiene una estructura bastante simple como una simple capa tanh, mientras que la red LSTM tiene una estructura más compleja, pues dentro de cada módulo tiene cuatro capas que interactúan de una manera muy especial. 
 </div>
 
 <p align="center">
@@ -53,7 +52,7 @@ Una red recurrente y una LSTM tienen el diseño de cadena antes mostrado, la red
 </p>
 
 <div style="text-align: justify">
-Lo principal en las LSTM es un estado de cada celda o "cell state" (C_t) esta es la línea horizontal que corre en la parte superior,  piénselo como una cinta transportadora la cual lleva los cell states al final con cambios mínimos, la LSTM puede hacerle cambios a los cell states, regulado por algo llamado "gates" o compuertas las cuales se usan para opcionalmente dejar pasar información. Están compuestas por una capa de red neuronal sigma y una operación producto-punto. La sigma envía un valor entre 0 y 1, los cuales indican la cantidad de componentes que se van a dejar pasar, donde el valor 0 indica que no se dejan pasar componentes. Los LSTM tienen tres de estas compuertas para proteger muy bien la información del cell state y, por supuesto, también cuentan con una compuerta tanh
+Lo principal en las LSTM es un estado de cada celda o "cell state" (C_t) esta es la línea horizontal que corre en la parte superior,  piénselo como una cinta transportadora la cual lleva los cell states al final con cambios mínimos, la LSTM puede hacerle cambios a los cell states, regulado por algo llamado "gates" o compuertas las cuales se usan para opcionalmente dejar pasar información. Están compuestas por una capa de red neuronal sigma y una operación producto-punto. La sigma envía un valor entre 0 y 1, los cuales indican la cantidad de componentes que se van a dejar pasar, donde el valor 0 indica que no se dejan pasar componentes. Los LSTM tienen tres de estas compuertas para proteger muy bien la información del cell state y, por supuesto, también cuentan con una compuerta tanh esta compuerta resuelve el problema del desvanecimiento de gradiente el objetivo es hallar una función con la cual su segunda derivada pueda sostenerse por un largo tiempo sin llegar a cero.
 </div>
 
 <p align="center">
