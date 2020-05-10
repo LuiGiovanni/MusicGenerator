@@ -44,7 +44,8 @@ Una de las cosas más llamativas en cuanto a redes recurrentes es cuando se quie
 
 ### LSTM (Long Short Term Memory)
 <div style="text-align: justify">
-Estas redes fueron creadas explícitamente para resolver los problemas ya descritos de las redes recurrentes, pero ¿cómo es que funcionan? ¿Y cuáles son las diferencias entre las dos? Pues, una red recurrente y una LSTM ambas tienen el diseño de cadena antes mostrado, la red recurrente normalmente tiene una estructura bastante simple como una simple capa tanh
+Estas redes fueron creadas explícitamente para resolver los problemas ya descritos anteriormente de las redes recurrentes, pero ¿cómo es que funcionan? Y ¿ cuáles son las diferencias entre las dos?<br><br>
+Una red recurrente y una LSTM tienen el diseño de cadena antes mostrado, la red recurrente normalmente tiene una estructura bastante simple como una simple capa tanh, mientras que la red LSTM tiene una estructura más compleja, pues dentro de cada módulo tiene cuatro capas que interactúan de una manera muy especial. 
 </div>
 
 <p align="center">
@@ -52,15 +53,17 @@ Estas redes fueron creadas explícitamente para resolver los problemas ya descri
 </p>
 
 <div style="text-align: justify">
-Aquí viene lo bueno, una red LSTM tiene una estructura más compleja, dentro de cada módulo tiene cuatro capas que interactúan de una manera muy especial, lo principal en las LSTM es un estado de cada celda o "cell state" (C_t) esta es la línea horizontal que corre en la parte superior piénselo como una cinta transportadora la cual lleva los cell states al final con cambios mínimos, la LSTM puede hacerle cambios a los cell states, regulado por algo llamado "gates" o compuertas las cuales se usan para opcionalmente dejar pasar información. Están compuestas por una capa de red neuronal sigma y una operación producto-punto. La sigma envía un valor entre 0 y 1 el cual indica que tanto de cada componente dejar pasar con 0 siendo "no dejes pasar nada", los LSTM tienen tres de estas compuertas para proteger muy bien la información del cell state y, por supuesto, también cuentan con una compuerta tanh
+Lo principal en las LSTM es un estado de cada celda o "cell state" (C_t) esta es la línea horizontal que corre en la parte superior,  piénselo como una cinta transportadora la cual lleva los cell states al final con cambios mínimos, la LSTM puede hacerle cambios a los cell states, regulado por algo llamado "gates" o compuertas las cuales se usan para opcionalmente dejar pasar información. Están compuestas por una capa de red neuronal sigma y una operación producto-punto. La sigma envía un valor entre 0 y 1, los cuales indican la cantidad de componentes que se van a dejar pasar, donde el valor 0 indica que no se dejan pasar componentes. Los LSTM tienen tres de estas compuertas para proteger muy bien la información del cell state y, por supuesto, también cuentan con una compuerta tanh
 </div>
 
 <p align="center">
   <img src="assets/LSTM3-chain.png">
 </p><br>
 
+, les recomiendo visitar el blog de colah.
+
 <div style="text-align: justify">  
-Explicar paso a paso como funciona un LSTM tomaría mucho tiempo, para más información recomiendo que vean el blog de <a href="https://github.com/colah/">colah</a> donde explica todo más a fondo <a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/">aqui</a>
+Para una explicación más detallada de sobre el funcionamiento de las LSTM les recomiendo que vean el blog de <a href="https://github.com/colah/">colah</a> donde explica todo más a fondo <a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/">aqui</a>
 </div>
 
 ### Music21
