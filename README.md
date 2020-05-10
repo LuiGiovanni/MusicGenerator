@@ -109,7 +109,7 @@ Ahora que conocemos un poco de cada capa es hora de introducirlas a nuestra red 
 
 <div style="text-align: justify">
 Me base en el trabajo realizado por <a href="https://towardsdatascience.com/@sigurdurssigurg">Sigurður Skúli</a> para ir desarrollando el mío, me base en su trabajo de generación de música para hacer las modificaciones necesarias para realizar el proyecto que tenía en mente.<br><br> En cuanto a mi entrenamiento, hice unas pruebas con el pipeline cambiando batches, inicie con un batch de 32 al correr las primeras canciones con epoch de 150 para hacer pruebas rápidas pero con 32 me causaba resultados que no me gustaron así que fui a 64 y el número de epochs a 250 pude haber aumentado el número a algo más alto para ver los resultados, pero afectaba mucho el tiempo para entregar el proyecto, mi plan a futuro es hacer entrenamientos con epochs más largos para hallar un punto donde sienta que es muy razonable el cambio o que la pérdida será mínima. Mucho de mi enfoque se centró en cambiar las capas: la cantidad de capas y la cantidad de neuronas por cada capa.<br><br> Otro defecto (En mi opinión) que tiene ahorita el código es que cuando termina el entrenamiento te genera un numero de archivos hdf5 igual a el numero epoch, el título de este archivo tiene el número de epoch y la perdida y cada vez que corras el predict.py para generar una nueva canción debes cambiar el archivo que busca a el nuevo archivo hdf5. Esto a mí no me gustaba ya que es muy incómodo así que lo cambie para que el nombre del archivo no deba cambiarse.
-</div>
+</div><br>
 
 > Dato curioso: Normalmente el entrenamiento utilizando la supercomputadora de la Universidad de Sonora ACARUS me tomo alrededor de 3-4 hora un entrenamiento de 250 epochs.
 
