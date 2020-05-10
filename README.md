@@ -82,12 +82,21 @@ El proyecto original utiliza música de Final Fantasy para entrenar su red. No h
 
 ## El Modelo
 <div style="text-align: justify">
-Primero les diré muy básico que es lo que está pasando con el código: empieza obteniendo la música en formato midi y utilizando Music21 para convertir las notas de la música a datos que son más manejables por el programa, los guarda en un archivo llamado "data/notes" esto lo hace cada vez que corres el programa así que si cambias la música en tu carpeta "midi" volverá a convertir esa música en datos para poder entrenarla, lo siguiente que hace es preparar las secuencias que serán usadas por la red neuronal obteniendo todos los "pitch names", de las notas que ya obtuvimos crea un diccionario y mapea los pitch a enteros, después de esto crea secuencias de entradas y sus salidas correspondientes, las entradas se reforman para algo más compatible con capas LSTM y normaliza las entradas. Ahora se crea la estructura de la red neuronal. y al final entrenamos nuestra red.
+Primero les diré muy básico que es lo que está pasando con el código: empieza obteniendo la música en formato midi y utilizando Music21 para convertir las notas de la música a datos que son más manejables por el programa, los guarda en un archivo llamado "data/notes" esto lo hace cada vez que corres el programa así que si cambias la música en tu carpeta "midi" volverá a convertir esa música en datos para poder entrenarla, lo siguiente que hace es preparar las secuencias que serán usadas por la red neuronal obteniendo todos los "pitch names", de las notas que ya obtuvimos crea un diccionario y mapea los pitch a enteros, después de esto crea secuencias de entradas y sus salidas correspondientes, las entradas se reforman para algo más compatible con capas LSTM y normaliza las entradas. Ahora se crea la estructura de la red neuronal. y al final entrenamos nuestra red.<br><br>
 </div><br>
 
 <p align="center">
   <img src="https://i.gyazo.com/8559083d1ead5a2499f8341bf6b63c76.png">
 </p>
+
+<div style="text-align: justify">
+En este modelo se uso 4 tipos de capas distintas: 
+</div><br>
+
+##### Capa LSTM: Toma una secuencia como entrada (input) y puede devolver una secuencia o una matriz 
+##### Capa dropout (expulsar): Esta capa consiste en ajustar una fraccion de entradas a 0 en cada actualizacion durante el entrenamiento para prevenir sobreajuste (overfitting), la fraccion de entradas se determina por el parametro usado con la capa.
+##### Capa densa o Capa completamente conectada (fully connected): Es una capa de red neuronal donde cada nodo de entrada (input) esta concectado con cada nodo de salida (output)
+##### Capa de activacion: Determina cual funcion de activacion nuestra red neuronal usara para calcular el nodo la salida (output) de un nodo.
 
 <div style="text-align: justify">
 Me base en el trabajo realizado por <a href="https://towardsdatascience.com/@sigurdurssigurg">Sigurður Skúli</a> para ir desarrollando el mio, me base en su trabajo de generacion de musica para hacer las modificaciones necesarias para realizar el proyecto que tenia en mente.<br><br> En cuanto a mi entrenamiento, hice unas pruebas con el pipeline cambiando batches, inicie con un batch de 32 al correr las primeras canciones con epoch de 150 para hacer pruebas rápidas pero con 32 me causaba resultados que no me gustaron así que fui a 64 y el número de epochs a 250 pude haber aumentado el número a algo más alto para ver los resultados, pero afectaba mucho el tiempo para entregar el proyecto, mi plan a futuro es hacer entrenamientos con epochs más largos para hallar un punto donde sienta que es muy razonable el cambio o que la pérdida será mínima. Mucho de mi enfoque se centró en cambiar las capas: la cantidad de capas y la cantidad de neuronas por cada capa. Ya que mucho del entrenamiento y pipeline ya eran bastante buenos los cambios no fueron tan drásticos como esperaba que lo serían al iniciar.<br><br> Otro defecto (En mi opinión) que tiene ahorita el código es que cuando termina el entrenamiento te genera un numero de archivos hdf5 igual a el numero epoch, el título de este archivo tiene el número de epoch y la perdida y cada vez que corras el predict.py para generar una nueva canción debes cambiar el archivo que busca a el nuevo archivo hdf5. Esto a mí no me gustaba ya que es muy incómodo así que lo cambie para que el nombre del archivo no deba cambiarse.
