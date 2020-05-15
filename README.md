@@ -79,7 +79,7 @@ Es una API de redes neuronales de alto nivel que simplifica interacciones con Te
 
 ## Musica Utilizada
 <div style="text-align: justify">
-El proyecto original utiliza música de Final Fantasy para entrenar su red. No he tenido la oportunidad de jugar muchos juegos de Final Fantasy solamente he podio jugar el tercero. así que decidí utilizar música de Final Fantasy 3, Chrono Trigger, Mario bros 3 y The Legend of Zelda: Ocarina of Time. La música fue hallada en una página llamada <a href="https://www.vgmusic.com/">VGMusic</a> la cual contiene una variedad de música de videojuegos en formato midi y tiene su propia sección de midis que solo utilizan el piano lo cual fue muy útil. Lamentablemente al buscar música de Star Wars en formato midi no halle nada que fuera solamente el piano lo que hacía un poco más difícil la idea de utilizarlo como datos de entrenamiento.
+En el proyecto original utilizan música de Final Fantasy para entrenar su red. No he tenido la oportunidad de jugar todos los juegos de Final Fantasy, solamente el tercero, por ello decidí utilizar música de Final Fantasy 3, Chrono Trigger, Mario bros 3 y The Legend of Zelda: Ocarina of Time. La música fue encontrada en una página llamada <a href="https://www.vgmusic.com/">VGMusic</a>, la cual contiene una variedad de música de videojuegos en formato midi y tiene su propia sección de midis que solo utilizan el piano lo cual fue muy útil.  Lamentablemente no tuve éxito en mi búsqueda sobre canciones de star wars en formato midi,  pues solo eran de piano, lo que hacía un poco más difícil la idea de utilizarlo como datos de entrenamiento.
 </div>
 
 ## El Modelo
