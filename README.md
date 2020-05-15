@@ -69,12 +69,12 @@ Para una explicación más detallada de el funcionamiento de las LSTM les recomi
 
 ### Music21
 <div style="text-align: justify">
-Lo que hace este proyecto es leer la música en formato MIDI usando music21, se extraen las notas de los archivos MIDI con los que se quiere aprender para generar música similar.<br><br> Music21 es una colección de herramientas para ayudar a estudiantes y otros hallar respuestas de música más fácilmente, cosas como "Me pregunto cuántas veces Bach hace eso" o "desearía conocer cual banda fue la primera en usar ese progreso de acordes" o si quieres crear un programa el cual automáticamente escriba más música como es mi caso.
+Lo que hace este proyecto es leer la música en formato MIDI usando music21, se extraen las notas de los archivos MIDI con los que se quiere aprender para generar música similar.<br><br> Music21 es una colección de herramientas que facilita a las personas la obtención de respuestas sobre música de forma eficaz y sencilla. Por ejemplo dudas como: "Me pregunto cuántas veces Bach hace eso", "desearía conocer cuál fue la primer banda en usar ese progreso de acordes" o dudas como la mía, es decir, si quieres crear un programa el cual automáticamente escriba más música como es mi caso.
 </div>
 
 ### Keras
 <div style="text-align: justify">
-Básicamente es una API de redes neuronales de alto nivel. Esta simplifica interacciones con Tensorflow, se creó con el enfoque de poder realizar experimentaciones rápidas. Se utilizo Keras para poder crear y entrenar el modelo LSTM, ya que el modelo es entrenado se utiliza para generar notación musical para nuestra música.
+Es una API de redes neuronales de alto nivel que simplifica interacciones con Tensorflow, se creó con el enfoque de poder realizar experimentaciones rápidas. Se utilizan Keras para poder crear y entrenar el modelo LSTM,  cuando el modelo es entrenado se utiliza para generar notación musical para nuestra música.
 </div>
 
 ## Musica Utilizada
