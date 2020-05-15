@@ -69,7 +69,7 @@ Para una explicación más detallada de el funcionamiento de las LSTM les recomi
 
 ### Music21
 <div style="text-align: justify">
-Lo que hace el proyecto es leer la música en formato MIDI usando music21 para extraer las notas de los archivos MIDI con los que se quiere aprender para generar música similar.<br><br> Music21 es una colección de herramientas para ayudar a estudiantes y otros hallar respuestas de música más fácilmente, cosas como "Me pregunto cuántas veces Bach hace eso" o "desearía conocer cual banda fue la primera en usar ese progreso de acordes" o si quieres crear un programa el cual automáticamente escriba más música como es mi caso.
+Lo que hace este proyecto es leer la música en formato MIDI usando music21, se extraen las notas de los archivos MIDI con los que se quiere aprender para generar música similar.<br><br> Music21 es una colección de herramientas para ayudar a estudiantes y otros hallar respuestas de música más fácilmente, cosas como "Me pregunto cuántas veces Bach hace eso" o "desearía conocer cual banda fue la primera en usar ese progreso de acordes" o si quieres crear un programa el cual automáticamente escriba más música como es mi caso.
 </div>
 
 ### Keras
