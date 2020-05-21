@@ -119,7 +119,7 @@ Me basé en el trabajo realizado por <a href="https://towardsdatascience.com/@si
 
 ## Resultados
 <div style="text-align: justify">
-En mis primeras corridas solamente utilizaba música de cada juego por separado, para ver qué resultados me daban y al final utiliza toda la música que obtuve en una sola corrida para ver los resultados
+los primeros entrenamientos que hice solamente utilizaban música de cada juego por separado, para ver qué resultados me daban y al final utilicé toda la música que obtuve en una sola corrida para ver los resultados
 </div>
 
 ### Chrono Trigger
@@ -147,7 +147,7 @@ Your browser does not support the audio element.
 
 ### Mario Bros
 <div style="text-align: justify">
-Los resultados fueron mejor de lo que esperaba que fueran al iniciar esta parte del entrenamiento mi canción favorita de las que genero fue la segunda a los que han jugado este juego verán muchas partes similares a las originales, aquí la menor perdida fue de 0.024 con el epoch 248
+Al iniciar el entrenamiento con esas canciones, pensé que los resultados no serían muy buenos, pero al concluir las canciones que generó note que fueron bastante buenas y algunas de mis favoritas. Para personas que ya han jugado estos juegos clásicos verán muchas similitudes con sus contrapartes originales, aquí la menor perdida fue de 0.024 con el epoch 248.
 </div><br>
 
 Mario Bros 3 con 100 epoch
@@ -203,8 +203,10 @@ Your browser does not support the audio element.
 
 ## Conclusion
 <div style="text-align: justify">
-Al final de todo me siento muy satisfecho con los resultados que me dio el proyecto y me siento satisfecho con el trabajo que he realizado el tema de las redes recurrentes y machine learning están en un punto muy temprano y emocionante, a todos los que lean este blog se los recomiendo y espero que encuentren un gusto como el que he encontrado yo. Todos los enlaces llevan a lecturas muy interesantes de personas que han hecho un esfuerzo y aunque no vayan a trabajar en esto les recomiendo estas lecturas y estudiar más del tema se darán cuenta que mucho de la vida cotidiana utiliza redes recurrentes y machine learning en general. Si quieren empezar probando el código pueden correr predict.py para que les genere algunas canciones y si quieren probar el entrenamiento pueden reducir el número de epochs a algo más razonable y moverles a los valores para ir entendiendo que está sucediendo con el código, se los recomiendo.
+Al final de todo me siento muy satisfecho con los resultados que me dio el proyecto y me siento satisfecho con el trabajo que he realizado el tema de las redes recurrentes y machine learning están en un punto muy temprano y emocionante, Aprendí bastante sobre sobre machine learning con este proyecto y me demostró porque esta área está creciendo bastante y lo divertido que puede ser al ver tu proyecto empezar a correr y funcionar por primera vez, viendo los resultados de tus esfuerzos. Además de mucha teoría y conocimientos bastante útiles. Mis planes a futuro con este proyecto es agregarle algún tipo de UI (interfaz de usuario) para poder hacer que las canciones se generen de manera interactiva para el usuario y agregarle nuevos instrumentos al entrenamiento para no solo trabajar con un piano. Si quieren empezar probando el código pueden correr predict.py para que les genere algunas canciones y si quieren probar el entrenamiento pueden reducir el número de epochs a algo más razonable y moverles a los valores para ir entendiendo que está sucediendo con el código, se los recomiendo. A todos los que lean este blog se los recomiendo y espero que encuentren un gusto como el que he encontrado yo. Todos los enlaces llevan a lecturas muy interesantes de personas que han hecho un esfuerzo y aunque no vayan a trabajar en esto les recomiendo estas lecturas y estudiar más del tema se darán cuenta que mucho de la vida cotidiana utiliza redes recurrentes y machine learning en general.
 </div><br>
+
+
 
 ## Agradecimientos
 - A Sigurður Skúli por su <a href="https://towardsdatascience.com/how-to-generate-music-using-a-lstm-neural-network-in-keras-68786834d4c5">blog</a> sobre generación de música con LSTM, el codigo original también pueden hallarlo aquí.
