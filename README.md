@@ -209,6 +209,6 @@ Al final de todo me siento muy satisfecho con los resultados que me dio el proye
 ## Agradecimientos
 - A Sigurður Skúli por su <a href="https://towardsdatascience.com/how-to-generate-music-using-a-lstm-neural-network-in-keras-68786834d4c5">blog</a> sobre generación de música con LSTM, el codigo original también pueden hallarlo aquí.
 - A Christopher Olah por su <a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/">post</a> sobre redes recurrentes y LSTM me ayudo a entender bastante y por las imágenes que fueron obtenidas de su blog.
-- A la sección de funciones de activación de<a href="https://missinglink.ai/guides/neural-network-concepts/7-types-neural-network-activation-functions-right/">Missinglink</a> por su guía de como escoger la mejor función de activación.
+- A la sección de funciones de activación de<a href="https://missinglink.ai/guides/neural-network-concepts/7-types-neural-network-activation-functions-right/">Missinglink </a> por su guía de como escoger la mejor función de activación.
 - A el Doctor Julio Waissman por sus clases sobre redes neuronales y apoyo con dudas.
 - A la Doctora Sonia Sosa por su apoyo en cómo obtener la información y manejar mi método de trabajo, además de empujarme a poner lo mejor de mí en este proyecto.
