@@ -191,7 +191,7 @@ The Legend of Zelda con 250 epoch
 Your browser does not support the audio element.
 </audio><br>
 
-### Combinacion de toda la musica
+### Combinación de toda la música
 <div style="text-align: justify">
 No sabía que esperar de estos resultados, pensaba que no quedarían tan bien las canciones y que quizá haría una canción bastante mala lo dejo a criterio de todos como quedo, tuvo una pérdida de 0.8 en el epoch 250
 </div><br>
@@ -201,7 +201,7 @@ No sabía que esperar de estos resultados, pensaba que no quedarían tan bien la
 Your browser does not support the audio element.
 </audio><br>
 
-## Conclusion
+## Conclusión
 <div style="text-align: justify">
 Al final de todo me siento muy satisfecho con los resultados que me dio el proyecto, se pudo observar que al momento de ir aumentando los epoch las canciones que se generaban iban mejorando y nos daban ritmos que tenían más sentido con el resto de la canción, mis primeros entrenamientos los hacia con epoch de 50 - 100 y observaba que a veces me daba resultados muy buenos, pero solo en pequeñas porciones de la canción y en epoch grandes las canciones tenía más congruencia en total. Me siento satisfecho con el trabajo que he realizado el tema de las redes recurrentes y machine learning están en un punto muy temprano y emocionante, Aprendí bastante sobre sobre machine learning con este proyecto y me demostró porque esta área está creciendo bastante y lo divertido que puede ser al ver tu proyecto empezar a correr y funcionar por primera vez, viendo los resultados de tus esfuerzos. Además de mucha teoría y conocimientos bastante útiles. Mis planes a futuro con este proyecto es agregarle algún tipo de UI (interfaz de usuario) para poder hacer que las canciones se generen de manera interactiva para el usuario y agregarle nuevos instrumentos al entrenamiento para no solo trabajar con un piano. Si quieren empezar probando el código pueden correr predict.py para que les genere algunas canciones y si quieren probar el entrenamiento pueden reducir el número de epochs a algo más razonable y moverles a los valores para ir entendiendo que está sucediendo con el código, se los recomiendo. A todos los que lean este blog se los recomiendo y espero que encuentren un gusto como el que he encontrado yo. Todos los enlaces llevan a lecturas muy interesantes de personas que han hecho un esfuerzo y aunque no vayan a trabajar en esto les recomiendo estas lecturas y estudiar más del tema se darán cuenta que mucho de la vida cotidiana utiliza redes recurrentes y machine learning en general.
 </div><br>
