@@ -119,7 +119,7 @@ Me basé en el trabajo realizado por <a href="https://towardsdatascience.com/@si
 
 ## Resultados
 <div style="text-align: justify">
-los primeros entrenamientos que hice solamente utilizaban música de cada juego por separado, para ver qué resultados me daban y al final utilicé toda la música que obtuve en una sola corrida para ver los resultados
+Los primeros entrenamientos que hice solamente utilizaban música de cada juego por separado, para ver qué resultados me daban y al final utilicé toda la música que obtuve en una sola corrida para ver los resultados
 </div>
 
 ### Chrono Trigger
