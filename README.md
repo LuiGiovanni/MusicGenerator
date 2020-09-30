@@ -23,7 +23,7 @@ Una red neuronal recurrente trabaja en ciclos de retroalimentación de datos, al
 </div>
 
 <p align="center">
-  <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-rolled.png" width="130" height="170">
+  <img src="images/MusicGenerator/RNN-rolled.png" width="130" height="170">
 </p>
 
 > Imagenes obtenidas en el blog de colah, proporciono el vinculo en la seccion de agradecimientos.
@@ -33,7 +33,7 @@ Una red neuronal recurrente trabaja en ciclos de retroalimentación de datos, al
 </div>
 
 <p align="center">
-  <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png">
+  <img src="images/MusicGenerator/RNN-unrolled.png">
 </p>
 
 <div style="text-align: justify">
@@ -52,7 +52,7 @@ Estas redes fueron creadas explícitamente para resolver los problemas ya descri
 </div>
 
 <p align="center">
-  <img src="assets/LSTM3-SimpleRNN.png">
+  <img src="images/MusicGenerator/LSTM3-SimpleRNN.png">
 </p>
 
 <div style="text-align: justify">
@@ -60,7 +60,7 @@ Lo principal en las LSTM es un estado de cada celda o "cell state" (C_t), esta e
 </div>
 
 <p align="center">
-  <img src="assets/LSTM3-chain.png">
+  <img src="images/MusicGenerator/LSTM3-chain.png">
 </p><br>
 
 <div style="text-align: justify">
